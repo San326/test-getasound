@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Mon CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- police -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>getasound test</title>
+  </head>
+  <body>
+
+    <h1>Parlez nous de votre cible</h1>
+    <div id="cible">
+      <h2>Cible</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>B2B</h3>
+            <img src="img/factory.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+          <div class="col-sm">
+            <h3>B2C</h3>
+            <img src="img/factory.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+        </div>
+      </div>
+      
+      
+    </div> <!-- fin div cible -->
+
+    <div id="b2b">
+      <h2>B2B</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Entreprise</h3>
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+          <div class="col-sm">
+            <h3>Association</h3>
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+          <div class="col-sm">
+            <h3>Public</h3>
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+          <div class="col-sm">
+            <h3>Autres</h3> 
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+        </div><!-- fin div row -->
+      </div><!-- fin div container -->    
+      <h2>plus d'informations</h2>  
+      <form>    
+      <div class="form-group">
+        <p id="compteur"> 123 mot(s) </p>
+        <textarea id="exampleFormControlTextarea3" class="message" class="form-control" name="message" rows="7"></textarea>
+      </div>     
+      </form> 
+    </div> <!-- fin div b2b -->
+
+    <div id="b2c">
+      <h2>B2C</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Homme</h3>
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+          <div class="col-sm">
+            <h3>Femme</h3>
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+          <div class="col-sm">
+            <h3>Autre</h3>
+            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          </div>
+        </div><!-- fin div row -->
+      </div> <!-- fin div container -->  
+      <h2>plus d'informations</h2>
+      <form>
+      <div class="form-group">
+        <p id="cpteur">123 mot(s)</p>
+        <textarea id="exampleFormControlTextarea3" class="mes" class="form-control" name="message" rows="7"></textarea>
+      </div>
+      </form>
+    </div> <!--fin div b2c  -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- compteur-->
+    <!-- jQuery  -->
+    <script src="js/jquery-1.4.3.min.js"></script>
+    <script>
+      $(document).ready(function(e) {
+ 
+        $('.message').keyup(function() {
+ 
+          var nombreMots = jQuery.trim($(this).val()).split(' ').length;
+          if($(this).val() === '') {
+          }
+          var nombreMots = 123 - nombreMots;
+          var msg = ' ' + nombreMots + ' mot(s)';
+          $('#compteur').text(msg);
+          if (nombreMots < 0) { $('#compteur').addClass("mauvais"); } 
+          else { $('#compteur').removeClass("mauvais"); }
+ 
+        })//fin $('#message').keyup(function()
+ 
+      });//fin $(document).ready(function(e) 
+      //fin 1er compteur
+      //2éme compteur
+      $(document).ready(function(e) {
+ 
+        $('.mes').keyup(function() {
+ 
+          var nbrMots = jQuery.trim($(this).val()).split(' ').length;
+          if($(this).val() === '') {
+          }
+          var nbrMots = 123 - nbrMots;
+ 
+          var mesg = ' ' + nbrMots + ' mot(s)';
+          $('#cpteur').text(mesg);
+          if (nbrMots < 0) { $('#cpteur').addClass("bad"); } 
+          else { $('#cpteur').removeClass("bad"); }
+ 
+        })//fin $('#mes').keyup(function()
+ 
+      });//fin $(document).ready(function(e) 
+      //fin 2éme compteur
+    </script>
+   
+  </body>
+</html>
