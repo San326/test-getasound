@@ -1,25 +1,84 @@
 *{
-	font-family: 'Roboto', sans-serif;	
+	font-family: 'Roboto', sans-serif;
+	margin: auto;
+	padding: auto;
 }
 h1{
 	font-size: 52px;
 	font-weight: bold;
+	margin-top: 0.5em;
+ 	margin-bottom: 2em;
+ 	text-align: center;
 }
 h2{
 	font-size: 18px;
 	font-weight: bold;	
+	text-align: center;
+	margin: 0.5em;
+	color: #F5F5F5;
 }
 h3{
 	font-size: 15px;
+	margin: 0.5em;
 }
 
- 
 
- 
+ #cible{
+ 	background-color: #DCDCDC;
+ 	padding: 2em;
+ 	width: 85%;
+ }
+textarea{
+ 	width: 100%;
+ }
+
+p{
+	color: blue;
+}
+.container{
+	padding-top: 1em;
+}
+
+
 .mauvais {
   color:#cc0000;
 }
 .bad {
   color:#cc0000;
 }
+
+
+/*affiche/masque div choix*/
+a,
+.definition:target {
+  width: 85%;
+}
+
+
+.masquer {
+/* définition explicite afin de pouvoir interagir dessus par la suite. */
+  display: block!important;
+}
+
+.definition {
+  position: absolute;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  padding: 1em;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6 & IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+   	background-color: #DCDCDC;
+}
+.definition:target {
+  position: relative;
+  height: auto;
+  margin-bottom: 1em;
+
+.definition:target ~ small {
+  display: none!import;
+}
+/*bordure bleu*/
+
 

@@ -16,82 +16,133 @@
   </head>
   <body>
 
-    <h1>Parlez nous de votre cible</h1>
+  <h1>Parlez nous de votre cible</h1>
+    
     <div id="cible">
       <h2>Cible</h2>
       <div class="container">
-        <div class="row">
-          <div class="col-sm">
+        <div class="row justify-content-center">
+          <div class="col-2" class="bordure">
             <h3>B2B</h3>
+            <a href="#def1"  >
             <img src="img/factory.png" alt="image d'illutration" class="img-thumbnail">
+            </a>
           </div>
-          <div class="col-sm">
+          <div class="col-2" class="bordure">
             <h3>B2C</h3>
+            <a href="#def2" >
             <img src="img/factory.png" alt="image d'illutration" class="img-thumbnail">
+            </a>
           </div>
         </div>
-      </div>
-      
-      
+      </div>  
     </div> <!-- fin div cible -->
 
-    <div id="b2b">
-      <h2>B2B</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h3>Entreprise</h3>
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
-          </div>
-          <div class="col-sm">
-            <h3>Association</h3>
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
-          </div>
-          <div class="col-sm">
-            <h3>Public</h3>
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
-          </div>
-          <div class="col-sm">
-            <h3>Autres</h3> 
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
-          </div>
-        </div><!-- fin div row -->
-      </div><!-- fin div container -->    
-      <h2>plus d'informations</h2>  
-      <form>    
-      <div class="form-group">
-        <p id="compteur"> 123 mot(s) </p>
-        <textarea id="exampleFormControlTextarea3" class="message" class="form-control" name="message" rows="7"></textarea>
-      </div>     
-      </form> 
-    </div> <!-- fin div b2b -->
 
-    <div id="b2c">
-      <h2>B2C</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h3>Homme</h3>
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+
+<!--debut des div caché-->
+    <!--debut div b2b-->
+    <div id="def1" class="definition">
+      <div id="b2b">
+        <h2>B2B</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h3>Entreprise</h3> 
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>            
+                </div>
+              <div class="col-sm">
+                <h3>Association</h3>
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>
+              </div>
+              <div class="col-sm">
+                <h3>Public</h3>
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>
+              </div>
+              <div class="col-sm">
+                <h3>Autres</h3> 
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>
+              </div>
+            </div><!-- fin div row -->
+          </div><!-- fin div container -->
+
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h2>plus d'informations</h2>
+              </div>
+              <div class="col-sm">
+              </div>
+              <div class="col-sm">
+                <p id="compteur"> 123 mot(s) </p>
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            <h3>Femme</h3>
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10">          
+                <form>   
+                <div class="form-group">
+                  <textarea id="exampleFormControlTextarea1" class="message" class="form-control" name="message" rows="3"></textarea>
+                </div>     
+                </form>
+              </div>
+              <div class="col-6 col-md-2">
+              </div>
+            </div>
+          </div>          
+          <a href="#titre" class="masquer">Revenir au choix</a> 
+      </div> 
+    </div>
+    <!-- fin div b2b -->
+    <!--debut div b2c-->
+    <div id="def2" class="definition">
+      <div id="b2c">
+        <h2>B2C</h2>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h3>Homme</h3>
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>
+              </div>
+              <div class="col-sm">
+                <h3>Femme</h3>
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>
+              </div>
+              <div class="col-sm">
+                <h3>Autre</h3>
+                <button type="button" class="btn btn-outline-primary"><img src="img/boy.png" alt="image d'illutration" class="img-thumbnail"></button>
+              </div>
+            </div><!-- fin div row -->
+          </div> <!-- fin div container -->
+          <div class="container">
+            <div class="row">
+              <div class="col-sm">
+                <h2>plus d'informations</h2>
+              </div>
+              <div class="col-sm">
+              </div>
+              <div class="col-sm">
+                <p id="cpteur">123 mot(s)</p>
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            <h3>Autre</h3>
-            <img src="img/boy.png" alt="image d'illutration" class="img-thumbnail">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-md-10">
+                <form>
+                  <div class="form-group">
+                    <textarea id="exampleFormControlTextarea1" class="mes" class="form-control" name="message"  rows="3"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="col-6 col-md-2">
+            </div>
           </div>
-        </div><!-- fin div row -->
-      </div> <!-- fin div container -->  
-      <h2>plus d'informations</h2>
-      <form>
-      <div class="form-group">
-        <p id="cpteur">123 mot(s)</p>
-        <textarea id="exampleFormControlTextarea3" class="mes" class="form-control" name="message" rows="7"></textarea>
-      </div>
-      </form>
-    </div> <!--fin div b2c  -->
+          
+          <a href="#titre" class="masquer">Revenir au choix</a>
+      </div> <!--fin div b2c  -->
+    </div>
 
 
     <!-- Optional JavaScript -->
@@ -139,6 +190,7 @@
  
       });//fin $(document).ready(function(e) 
       //fin 2éme compteur
+      document.getElementById("bordure").focus(); 
     </script>
    
   </body>
